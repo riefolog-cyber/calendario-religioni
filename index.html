@@ -1,13 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>EduReligioni - Calendario Interreligioso Didattico 2026</title>
+    <meta name="description" content="Dashboard didattica interattiva con calendario annuale delle festività religiose, spunti di riflessione quotidiana e quiz per studenti e docenti." />
+    <meta property="og:title" content="EduReligioni - Calendario Interreligioso Didattico 2026" />
+    <meta property="og:description" content="Esplora le festività mondiali, spunti di riflessione interreligiosa quotidiani e quiz per la scuola secondaria." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('edureligioni_theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-200">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
 

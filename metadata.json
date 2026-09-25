@@ -1,5 +1,7 @@
 {
   "name": "EduReligioni",
   "description": "Dashboard interattiva con calendario annuale delle festività religiose, pensata per studenti di scuola secondaria.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
+

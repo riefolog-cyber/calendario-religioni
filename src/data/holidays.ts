@@ -9,37 +9,48 @@ export interface Holiday {
 
 export const RELIGIONS: Religion[] = ['Cristianesimo', 'Ebraismo', 'Islam', 'Induismo', 'Buddhismo', 'Sikhismo', 'Taoismo', 'Shintoismo'];
 
+export const RELIGION_EMOJIS: Record<Religion, string> = {
+  Cristianesimo: '✝️',
+  Ebraismo: '✡️',
+  Islam: '☪️',
+  Induismo: '🕉️',
+  Buddhismo: '☸️',
+  Sikhismo: '🪯',
+  Taoismo: '☯️',
+  Shintoismo: '⛩️',
+};
+
 export const RELIGION_COLORS: Record<Religion, string> = {
-  Cristianesimo: 'bg-blue-500 text-white',
-  Ebraismo: 'bg-purple-500 text-white',
-  Islam: 'bg-emerald-500 text-white',
+  Cristianesimo: 'bg-blue-600 text-white',
+  Ebraismo: 'bg-purple-600 text-white',
+  Islam: 'bg-emerald-600 text-white',
   Induismo: 'bg-orange-500 text-white',
-  Buddhismo: 'bg-amber-400 text-black',
-  Sikhismo: 'bg-yellow-500 text-black',
-  Taoismo: 'bg-teal-500 text-white',
-  Shintoismo: 'bg-red-500 text-white',
+  Buddhismo: 'bg-amber-500 text-white',
+  Sikhismo: 'bg-yellow-500 text-slate-950 font-semibold',
+  Taoismo: 'bg-teal-600 text-white',
+  Shintoismo: 'bg-rose-500 text-white',
 };
 
 export const RELIGION_HEX_COLORS: Record<Religion, string> = {
-  Cristianesimo: '#3b82f6',
-  Ebraismo: '#a855f7',
-  Islam: '#10b981',
-  Induismo: '#f97316',
-  Buddhismo: '#fbbf24',
+  Cristianesimo: '#2563eb',
+  Ebraismo: '#9333ea',
+  Islam: '#059669',
+  Induismo: '#ea580c',
+  Buddhismo: '#f59e0b',
   Sikhismo: '#eab308',
-  Taoismo: '#14b8a6',
-  Shintoismo: '#ef4444',
+  Taoismo: '#0d9488',
+  Shintoismo: '#f43f5e',
 };
 
 export const RELIGION_BORDER_COLORS: Record<Religion, string> = {
-  Cristianesimo: 'border-blue-500',
-  Ebraismo: 'border-purple-500',
-  Islam: 'border-emerald-500',
-  Induismo: 'border-orange-500',
-  Buddhismo: 'border-amber-400',
-  Sikhismo: 'border-yellow-500',
-  Taoismo: 'border-teal-500',
-  Shintoismo: 'border-red-500',
+  Cristianesimo: 'border-blue-500 dark:border-blue-400',
+  Ebraismo: 'border-purple-500 dark:border-purple-400',
+  Islam: 'border-emerald-500 dark:border-emerald-400',
+  Induismo: 'border-orange-500 dark:border-orange-400',
+  Buddhismo: 'border-amber-400 dark:border-amber-300',
+  Sikhismo: 'border-yellow-400 dark:border-yellow-300',
+  Taoismo: 'border-teal-500 dark:border-teal-400',
+  Shintoismo: 'border-rose-500 dark:border-rose-400',
 };
 
 export const MULTIPLE_HOLIDAYS_COLOR = 'bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white font-bold shadow-md';
